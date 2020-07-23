@@ -7,8 +7,9 @@ request = pc.makeRequestRSpec()
 
 tourDescription = \
 """
-This profile provides a three-node set to study NFS/SSO. One node will be the LDAP server, one node will be the NFS server, 
-and the remaining node is an NFS client. Both NFS nodes will be authenticated using LDAP. 
+This profile provides a two-node set for assignment 2. One node will be the LDAP/NFS server (observer) with a public IP,
+one node will be the NFSclient/Apache server without a public IP (webserver).
+ 
 """
 #
 # Setup the Tour info with the above description and instructions.
