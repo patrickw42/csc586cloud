@@ -23,10 +23,10 @@ link = request.LAN("lan")
 for i in range(2):
   if i == 0:
     node = request.XenVM("observer")          #this node runs the NFS server without public IP    
-    node.routable_control_ip = "true"         
+             
   elif i == 1:
     node = request.XenVM("webserver")         # this node runs the Apache server with a public IP
-    node.routable_control_ip = "false"
+    node.routable_control_ip = "true"
   
   node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU18-64-STD"
   iface = node.addInterface("if" + str(i))
